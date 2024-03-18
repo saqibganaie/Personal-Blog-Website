@@ -1,0 +1,24 @@
+---
+layout : "base.njk"
+---
+
+
+<article class="blog-article">
+
+    <h1 class="blog-article-title">
+        {{ blogTitle }}
+    </h1>
+
+    <figure class="blog-article-figure">
+        <img src="{{ imageUrl }}" alt="{{ imageAlt }}">
+        <figcaption>
+            {{ imageAlt }}
+        </figcaption>
+    </figure>
+    <div class="blog-content">
+    {{ content | safe }}
+    </div>
+</article>
+
+
+

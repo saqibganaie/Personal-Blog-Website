@@ -1,0 +1,25 @@
+
+  
+<div class="blog-card">
+  <div class="blog-content">
+  <div class="blog-title">
+{{ blog.data.blogTitle }} 
+  </div>
+  <div class="blog-publish-details">
+    Published by
+<span class="blog-publisher-name">
+    {{ blog.data.publisher }}
+</span> on
+  <span class="blog-published-date">
+    {{ blog.date | blogDate }}
+  </span>
+  </div>
+  <div class="blog-description">
+   {{ blog.data.description }}
+  </div>
+  <div><a href="{{ blog.url }}"><button class="blog-link-btn">
+    Read More
+  </button></a></div>
+  </div>
+  <img class="blog-image" src="{{ blog.data.imageUrl }}" alt="{{ blog.data.imageAlt }}">
+</div>

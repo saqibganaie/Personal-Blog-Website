@@ -1,0 +1,8 @@
+---
+title: "Blogs"
+layout: "base.njk"
+---
+
+{% for blog in collections.blogs %}
+{% include "blog-snippet.njk" %}
+{% endfor %}
